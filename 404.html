@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page not found</title>
+<script>
+// Leanamycs was renamed Leanamics (October 2026). GitHub does not redirect
+// project Pages sites after a repository rename, so every old URL under
+// /leanamycs/ lands here: forward it to the same path under /leanamics/,
+// keeping the query string and the #fragment (doc-gen4 "find" links use it).
+(function () {
+  var m = location.pathname.match(/^\/leanamycs(\/.*)?$/i);
+  if (m) {
+    location.replace("/leanamics" + (m[1] || "/") + location.search + location.hash);
+  }
+})();
+</script>
+</head>
+<body>
+<p>Page not found.</p>
+<p>Looking for Leanamycs? The project is now
+<a href="https://formal-dynamics.github.io/leanamics/">Leanamics</a>
+(<a href="https://github.com/formal-dynamics/leanamics">source</a>).</p>
+</body>
+</html>
